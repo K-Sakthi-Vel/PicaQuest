@@ -1,0 +1,109 @@
+.gallery_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgrey;
+    padding-top: 30px;
+    gap:30px;
+    overflow-y: scroll;
+}
+.picture_div{
+    width: 90%;
+    height: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.image{
+    height: 100%;
+    width: 300px;
+    transition: all .1s ease-in-out;
+}
+.image:hover{
+    transform: scale(1.005);
+    box-shadow: 0px 0px 5px 1px #1f1f1f;
+}
+.picture_details{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    background-color:azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.picture_details h1{
+    display: inline;
+}
+.picture_details p{
+    display: inline;
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.open_and_download{
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+.open_and_download p{
+    display: inline;
+    font-size: 1.4rem;
+    color: #1f1f1f;
+}
+.open_image,
+.download_image{
+    height: fit-content;
+    width: fit-content;
+    background-color: lightsalmon;
+    padding: 10px;
+    text-decoration: none;
+    font-size: larger;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.open_image:hover,
+.download_image:hover{
+    transform: scale(1.04);
+    background-color: lightgray;
+}
+.download_image{
+    margin-bottom: -10px;
+}
+.open_and_download a{
+    text-decoration: none;
+    color: white;
+}
+
+.likes_and_counts{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.likes_and_counts img{
+    height: 100px;
+    width: 130px;
+}
+.likes_and_counts p{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    right: 12px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: white;
+    
+
+}
+.likes_and_counts img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
